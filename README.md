@@ -22,3 +22,5 @@ use req.url;
 #redirect
 Sails allow as to redirect  the requesting user-agent to the given absolute or relative url by using 
 return res.redirect(url);
+#use Blueprint API actions
+find,findOne,create,update,destroy,populate,add,remove for operations
