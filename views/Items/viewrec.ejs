@@ -1,0 +1,18 @@
+<div class='container'>
+	<table class="table">
+	<tr>
+		<th> Category Id </th>
+		<th> Category Name </th>
+	</tr>
+
+	<% _.each(user, function(user){ %>
+	<tr data-id= "<%= user.id  %>" data-model="user">
+
+	<td><%= user.cid %></td>
+	<td><%= user.cname %></td>
+	
+</tr>
+	<% }) %>
+	</table>
+	
+</div>
