@@ -6,8 +6,8 @@
  */
 
 module.exports = {
-	create: function(req, res){
 
+  create: function(req, res){
   var params = req.params.all()
 
   Customer.create({name: params.name}).exec(function createCB(err,created){
@@ -19,3 +19,4 @@ module.exports = {
 	
 };
 
+   
