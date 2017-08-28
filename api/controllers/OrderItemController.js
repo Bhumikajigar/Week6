@@ -7,7 +7,6 @@
 
 module.exports = {
 	create: function(req, res){
-
   var params = req.params.all()
 
   OrdetItem.create({name: params.name}).exec(function createCB(err,created){
@@ -16,6 +15,5 @@ module.exports = {
     });
   });
 }
-	
 };
 
