@@ -19,3 +19,6 @@ Classes	Class names should be nouns in UpperCamelCase So that it is easy to dist
 follow Sails JS Framework defined command line code to generate controller and models
 #URL
 use req.url;
+#redirect
+Sails allow as to redirect  the requesting user-agent to the given absolute or relative url by using 
+return res.redirect(url);
