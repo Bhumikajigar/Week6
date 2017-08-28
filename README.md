@@ -17,3 +17,5 @@ shorter identifiers may be preferred as more expedient, because they are easier 
 Classes	Class names should be nouns in UpperCamelCase So that it is easy to distinguish between classes and methods.
 #Variable name 
 follow Sails JS Framework defined command line code to generate controller and models
+#URL
+use req.url;
