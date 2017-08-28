@@ -8,27 +8,27 @@
 module.exports = {
 
   attributes: {
-id: {
+    id: {
   		type: 'string',
   		required: true
   	},
-catId: {
+    catId: {
   		type: 'string',
   		required: true
   	},
-name: {
+    name: {
   		type: 'string',
   		required: true
   	},
-description: {
+    description: {
   		type: 'string',
   		required: true
   	},
-image: {
+    image: {
   		type: 'string',
   		required: true
   	},
-price: {
+    price: {
   		type: 'string',
   		required: true
   	},
