@@ -24,3 +24,5 @@ Sails allow as to redirect  the requesting user-agent to the given absolute or r
 return res.redirect(url);
 #use Blueprint API actions
 find,findOne,create,update,destroy,populate,add,remove for operations
+#Use Blueprint routes
+There are three types of blueprint routes in Sails: RESTful routes
