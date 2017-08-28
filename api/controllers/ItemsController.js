@@ -7,7 +7,6 @@
 
 module.exports = {
 
-
 	// this method for call Items/index.ejs
 	'index':function(req, res)
 	{
@@ -15,57 +14,45 @@ module.exports = {
 	},
 
 	// this method for Save records
-	'saverec' :function(req, res, next)
+	'Save_Record' :function(req, res, next)
 	{
 		Items.create(req.params.all(), function userCreated(err, user){
 			if(err) return next(err);
-			
-			res.view();
-			
+ 		  res.view();	
 		});
 	},
 
-
 	// this method for Display all record in Items/show
-	'show': function(req, res, next){
+	'Show_Record': function(req, res, next){
 		Items.find(function foundUser(err, users){
 			if (err) return next(err);
 			if (!users) return next();
-
 			res.view({ 
 				users: users
 			});
- 
 		});
 	},
 
-
 	// this method for find record on given id in Items/viewrec
-	'viewrec': function(req, res, next){
+	'View_Record': function(req, res, next){
 		Items.findOne(req.param('id'), function foundUser(err, user){
 			if (err) return next(err);
 			if (!user) return next();
-
-			res.view({ 
+  		res.view({ 
 				user: user
 			});
- 
 		});
 	},
 
-
-
 	// this method for delete record on given id in Items/deleterec
-	'deleterec': function(req, res, next){
-
+	'Delete_Record': function(req, res, next){
 		Items.destroy(req.param('id')).exec(function (err){
   				if (err) {
     				return res.negotiate(err);
   					}
-  						sails.log('record have now been deleted, succesfully');
+            sails.log('record have now been deleted, succesfully');
  				    return res.ok();
 		});
 	}
-
-};
+  };
 
