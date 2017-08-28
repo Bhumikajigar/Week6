@@ -15,3 +15,5 @@ Indentation prefers braces placements or a block of code. It should be in correc
 shorter identifiers may be preferred as more expedient, because they are easier to type
 #Classes name
 Classes	Class names should be nouns in UpperCamelCase So that it is easy to distinguish between classes and methods.
+#Variable name 
+follow Sails JS Framework defined command line code to generate controller and models
