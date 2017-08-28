@@ -7,21 +7,21 @@
 
 module.exports = {
 
-  attributes: {
-id: {
+attributes: {
+    id: {
   		type: 'string',
   		required: true
   	},
 
-name: {
+    name: {
   		type: 'string',
   		required: true
   	},
-description: {
+    description: {
   		type: 'string',
   		required: true
   	},
-image: {
+    image: {
   		type: 'string',
   		required: true
   	},
